@@ -294,8 +294,8 @@ collision0,118,48,227,100,Head
 
 0interval,random,4
 0pattern0,-1,10,overlay,0,0
-0pattern1,66650,5,overlayfast,0,0
-0pattern2,66651,10,overlayfast,0,0
+0pattern1,66650,5,overlay,0,0
+0pattern2,66651,10,overlay,0,0
 0pattern3,-1,3,overlay,0,0
 
 1interval,talk,4

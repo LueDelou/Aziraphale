@@ -303,7 +303,7 @@ collision0,118,48,227,100,Head
 
 2interval,never
 2pattern0,66640,10,overlay,0,0
-2pattern1,66643,13,overlay,0,0
+2pattern1,66642,13,overlay,0,0
 2pattern2,-1,10,overlay,0,0
 
 3interval,never
@@ -311,6 +311,6 @@ collision0,118,48,227,100,Head
 3pattern1,-1,10,overlay,0,0
 
 4interval,never
-4pattern0,66643,14,overlay,0,0
+4pattern0,66642,14,overlay,0,0
 4pattern1,-1,10,overlay,0,0
 }

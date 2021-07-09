@@ -153,6 +153,8 @@ RandomTalk : nonoverlap
 			"It Came From Schenectady"
 			"And to Think That I Saw It on Mulberry Street"
 			"Dragonlance"
+			"Strangers in Their Own Land"
+			"Swamp Thing"
 			-- 
 			"''? Quite the "
 			--
@@ -166,6 +168,10 @@ RandomTalk : nonoverlap
 			" read, i think." 
 			
 			"\1\s[2503]D'you like Aerosmith? \w8\0\s[1504]Oh, honestly, Crowley, who doesn't like Aerosmith nowadays.\e"
+			
+			"\0\s[0]Ever heard this 'Weird Al' fellow? \w8\s[1533]\1\s[2505]Absolute Madlad, that one.\e"
+			
+			
 		
 	}
 	

@@ -29,8 +29,8 @@ craftmanurl,http://www.ashido.com/ukagaka/
 
 sakura.balloon.offsetx,117
 sakura.balloon.offsety,88
-kero.balloon.offsetx,67
-kero.balloon.offsety,-76
+kero.balloon.offsetx,31
+kero.balloon.offsety,-69
 sakura.balloon.alignment,none
 kero.balloon.alignment,none
 

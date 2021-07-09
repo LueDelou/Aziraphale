@@ -223,6 +223,8 @@ RandomTalk : nonoverlap
 	if month == 9
 	{
 		"\0\s[1530]Is it still September?\w8\1\s[2511]Believe so.\e"
+		
+		"\0\s[0]September's always a good time of year, i think.\e"
 	}
 	if month == 10
 	{

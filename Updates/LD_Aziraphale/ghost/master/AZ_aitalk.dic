@@ -229,6 +229,8 @@ RandomTalk : nonoverlap
 	if month == 10
 	{
 		"\0\s[1530]Is it still October?\w8\1\s[2511]Believe so.\e"
+		
+		"\0\s[1533]I do enjoy myself a Spooky Month.\e"
 	}
 	if month == 11
 	{

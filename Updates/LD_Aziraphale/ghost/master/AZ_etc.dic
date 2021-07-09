@@ -314,7 +314,7 @@ OnUpdateComplete
 	}
  	else //if the ghost has updated successfully
 	{
-		"\1\s[10]Update successful!\e"
+		"\0\s[0]There we go! All updated for you.\e"
  	}
 }
 

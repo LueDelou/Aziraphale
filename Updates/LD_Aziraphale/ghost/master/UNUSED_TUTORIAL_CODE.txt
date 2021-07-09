@@ -1,0 +1,63 @@
+//this is stuff where i'm not using that specific line but i may end up using the trick it teaches later
+
+	"\0\s[0]I am pausing \w4for dramatic \w6emphasis. \w8P\w6 - \w6A - \w6U - \w6S - \w6E.\e"
+	
+	//You can also pause multiple times within sentences, like so. At the end, you can pause between letters if your ghost is spelling something.
+
+//	"\1\s[10]Here is dialogue referring to Anchor 1.\w8\0\s[0]Here is dialogue referring to Anchor 2 and Anchor 3.\e"
+	
+	//Anchor words are defined more in anchor.dic. Note here when you see this dialogue that Anchor 1, 2, and 3 become links when spoken, even if they weren't written as links in the dialogue in this file. This is why anchor words are convenient, you don't have to set up link code every time they say a certain word. Try clicking the links when they appear to see what they lead to. It'll give you an idea of exactly how anchors work.
+
+	
+	//--Chains
+	//Chain dialogue is unique. A dialogue chain consists of multiple bits of dialogue that get called in order over a period of time.
+	
+	"\0\s[0]This is the first part of a chained dialogue.\w8\1\s[10]Second part to come when we next speak.\e:chain=achain"
+	
+	//Note here that instead of ending the dialogue with the normal end tag of \e, it ends with \e:chain=achain. This will link down below to a chunk of code outside RandomTalk called achain. You can scroll down and find it now if you want. You can name your chain anything you want, it'd just follow the same format of \e:chain=yourchainsname. Once a dialogue has entered a chain, they won't say any other random dialogue until the chain is finished.
+	
+	"\0\s[0]This will lead to the second piece of chained dialogue.\w8\1\s[10]This will have another chain attached to it.\e:chain=anotherchain"
+	
+	//Here, this will link to a different chain to continue the conversation. You can scroll down to the section on chains to see this in action.
+
+
+
+
+
+
+
+//So this is a bunch of code i'm not currently using that was included in the base.
+
+
+//	"\1\s[10]Here is dialogue on one line.\nHere is dialogue on the next line.\e"
+	
+	//You can use \n to move dialogue down one line, like hitting enter once. 
+	
+//	"\0\s[0]This is dialogue referring to %(username).\w8\1\s[10]Hello, %(username).\e"
+	
+	//Here, the characters are using the %(username) envelope to use the user's name. More on envelopes in word.dic. You can use any envelope you want in dialogue, practically.
+	
+//	"\1\s[10]Here is dialogue using %(username)'s pronouns.\w8\0\s[0]%(heshe) went to the store and got %(himher)self some milk for %(hisher) cat.\e"
+	
+	//You can use the pronouns set up during their first boot (see bootend.dic) or in the config menu (menu.dic) in sentences like this as well. You can see that the envelope %(heshe) replaces where he or she would be in the sentence, and so on for the rest of them. This makes it so they use the correct pronoun in the right place.
+	
+//	"\1\s[10]Here we'll use the envelope 'exampleenvelope' to show what it looks like in a balloon.\w8\0\s[0]%(exampleenvelope).\e"
+	
+	//As you can see, you can put any envelope from word.dic in here, as long as you properly format it as an envelope by putting a percent sign in front and putting it in parentheses. %(username), %(icecream), %(bunnies), whatever, this is up to you as long as you've defined it in word.dic. You can see how the values stored in the envelope appear in the balloon when the dialogue is called.
+	//Do note that you cannot put quotation marks in your dialogue. If you're using Notepad++ which you should be doing, you'll see the line break and turn black if you do. Use apostrophes instead.
+	
+//	"\1\s[10]Here we'll use the envelope 'blanklist' to show what it looks like in a balloon.\w8\0\s[0]%(blanklist).\e"
+	
+//	"\1\s[10]Here we'll use the envelope 'blanklist2' to show what it looks like in a balloon.\w8\0\s[0]%(blanklist2).\e"
+	
+//	"\1\s[10]Here we'll use the envelope 'blanklist3' to show what it looks like in a balloon.\w8\0\s[0]%(blanklist3).\e"
+	
+	//And here are more examples using the blanklists I set up in word.dic.
+	
+//	"\1\s[10]Here we'll use the envelope 'usersfolder' to pretend to look at the user's files.\w8\0\s[0]Hey, have you looked at %(usersfolder) lately?\w8\1\s[19]\n\n[half]No.\e"
+	
+	//You can use the usersfolder envelope creatively if you like, haha.
+
+//	"\1\s[10]Here we'll use the envelope 'internalenvelope' to show an envelop containing another envelope.\w8\0\s[0]%(internalenvelope).\e"
+	
+	//Here's an example using the internal envelope I mentioned in word.dic. Basically, a function within a function. More on that kind of thing on the coding page of the walkthrough.

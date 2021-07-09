@@ -359,7 +359,7 @@ OnUpdate.OnDownloadBegin
  
 OnUpdate.OnMD5CompareBegin
  {
-	"\e"
+	"\0\s[0].\w2\.\e"
  }
 
  //---- OnUpdate.OnMD5CompareComplete --------------------------------------------------
@@ -367,7 +367,7 @@ OnUpdate.OnMD5CompareBegin
  
 OnUpdate.OnMD5CompareComplete
  {
-	"\e"
+	"\0\s[0]...\e"
 }
 
  //---- OnUpdate.OnMD5CompareFailure ---------------------------------------------------

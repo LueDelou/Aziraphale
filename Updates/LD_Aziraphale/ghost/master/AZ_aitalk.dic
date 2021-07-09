@@ -277,6 +277,8 @@ RandomTalk : nonoverlap
 	if timeslot == "morning"
 	{
 		"\1\s[2515](Crowley looks a bit sleepy...)\e"
+		
+		"\1\s[10]You had breakfast yet, %(username)?\e"
 	}
 	if timeslot == "lunch"
 	{

@@ -139,6 +139,12 @@ RandomTalk : nonoverlap
 		elseif dayslot == "8month 9day"
 		{
 			"\0\s[0]Happy Birthday, Jo. \w8\1\s[2511]You already said that. \w8\0\n\n\s[1501]Did i?\e"
+			
+			"\1\s[2511]\0\s[0]Oh! It seems your daughter would like to say something. Would you like to hear from her?\n\n\n"
+			--
+			"\![*]\q[Yes,YesMomMessage]\n/
+			\![*]\q[No,NoMomMessage]\n/
+			\![*]\q[Already Did,AlreadyDid]\e"
 		}
 		
 		elseif dayslot == "9month 11day"
@@ -576,3 +582,24 @@ OnKeyPress
 	"\![open,readme]"
 	}
 }
+
+
+"\![*]\q[Yes,YesMomMessage]\n/
+			\![*]\q[No,NoMomMessage]\n/
+			\![*]\q[Already Did,AlreadyDid]\e"
+			
+Select.NoMomMessage
+{
+	"\0\s[1533]Alright, then.\e"
+}
+
+Select.AlreadyDid
+{
+	"\0\s[1533]Ah, silly me, of course you did. Ignore me, then!\e"
+}
+
+Select.NoMomMessage
+{
+	"\0\s[1533]Alright! We'll go get her. \w8\1\s[-1]\0\s[-1]\n\n(They go to find her real quick...) \w8\n\n\0\s[66601](There she is!)\w8\n\nHey, mom!\e"
+}
+

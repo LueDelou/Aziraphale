@@ -600,6 +600,6 @@ Select.AlreadyDid
 
 Select.NoMomMessage
 {
-	"\0\s[1533]Alright! We'll go get her. \w8\1\s[-1]\0\s[-1]\n\n(They go to find her real quick...) \w8\n\n\0\s[66601](There she is!)\w8\n\nHey, mom!\e"
+	"\0\s[1533]Alright! We'll go get her. \w8\1\s[-1]\0\s[-1]\n\n(They go to find her real quick...) \w8\n\n\0\s[66601]\w8\n\nHey, mom! \w8\s[66684]Great to see you! i'm gonna keep talking for a hot second to make sure this talking doesn't look too funky.\e"
 }
 
